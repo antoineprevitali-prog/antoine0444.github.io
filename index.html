@@ -28,26 +28,36 @@
             border-bottom: 1px solid #ecf0f1;
             padding-bottom: 3px;
         }
-        /* Style pour la boîte d'information */
+        /* Boîte d'information */
         .infobox {
             border: 1px solid #ccc;
             padding: 15px;
             margin-bottom: 20px;
-            overflow: auto; /* Pour contenir le float */
+            overflow: auto;
         }
         .photo {
             float: right;
-            width: 100px; /* Taille réduite pour l'exemple */
+            width: 100px;
             height: 100px;
             object-fit: cover;
             border-radius: 50%;
             margin-left: 15px;
         }
+        /* Nouveau carré sous la photo */
+        .square {
+            float: right;
+            width: 100px;
+            height: 100px;
+            object_fit: cover,
+            border-radius: 10px;
+            margin-left: 15px;
+            margin-top: 10px;
+        }
         .textbox {
             margin-bottom: 20px;
             text-align: center;
         }
-        /* Style pour les tableaux (Expérience et Formation) */
+        /* Tableaux */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -73,7 +83,7 @@
         .descr strong {
             color: #3498db;
         }
-        /* Style pour les listes de compétences et centres d'intérêt */
+        /* Listes */
         .skills-list, .interests-list {
             list-style: none;
             padding: 0;
@@ -96,6 +106,8 @@
 
     <div class="infobox">
         <img class="photo" src="photo_cv.jpeg" alt="Photo de profil" /> 
+        <img class="square" src="Logo_Paris-1.jpg" alt="Image complémentaire" />
+        <div class="square"></div> <!-- Carré ajouté ici -->
         <p><strong>Antoine PRÉVITALI</strong></p>
         <p>Étudiant</p>
         <p>Adresse : 32 rue Médéric, La Garenne-Colombes, 92250 France</p>
